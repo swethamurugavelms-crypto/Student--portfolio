@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">My Portfolio</h2>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Student Name</span></h1>
+            <h2>B.Sc. Computer Science Student</h2>
+            <p>
+                I am interested in programming, web development,
+                and creating useful applications.
+            </p>
+            <a href="#about" class="btn">Know More</a>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-card">
+            <p>
+                I am a Computer Science student who enjoys learning
+                new technologies and developing creative projects.
+                My goal is to improve my programming skills and
+                build a successful career in the IT field.
+            </p>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+        <h2>Education</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>B.Sc. Computer Science</h3>
+                <p>College Name</p>
+                <p>Year: 2025 - 2028</p>
+                <p>Percentage / CGPA: Update your score</p>
+            </div>
+
+            <div class="card">
+                <h3>Higher Secondary (12th)</h3>
+                <p>School Name</p>
+                <p>Year: Enter your year</p>
+                <p>Percentage: Enter your percentage</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <h2>Technical Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">C++</div>
+            <div class="skill">Problem Solving</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Student Portfolio Website</h3>
+                <p>
+                    A responsive website to display personal details,
+                    education, skills, projects, and achievements.
+                </p>
+                <a href="#about" class="read-more">Read more</a>
+            </div>
+
+            <div class="card">
+                <h3>Expense Tracker</h3>
+                <p>
+                    An application concept for recording expenses
+                    and managing daily spending.
+                </p>
+                <a href="#contact" class="read-more">Read more</a>
+            </div>
+
+            <div class="card">
+                <h3>Online Quiz Application</h3>
+                <p>
+                    A web application that presents questions,
+                    accepts answers, and displays a score.
+                </p>
+                <a href="#contact" class="read-more">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="section">
+        <h2>Achievements</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Course Completion</h3>
+                <p>Add your completed courses and certificates here.</p>
+            </div>
+
+            <div class="card">
+                <h3>Academic Achievements</h3>
+                <p>Add your genuine academic achievements here.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me -->
+    <section id="contact" class="section contact-section">
+        <h2>Contact Me</h2>
+
+        <form id="contactForm" novalidate>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                autocomplete="name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                autocomplete="email"
+                required
+            >
+
+            <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+            ></textarea>
+
+            <button type="submit" class="btn send-btn">
+                Send Message
+            </button>
+
+            <p id="status" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Student Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
