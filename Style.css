@@ -1,0 +1,309 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #4938c7;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 18px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #ffe082;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Home Section */
+.hero {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #e8e7ff, #f5f5ff);
+}
+
+.hero-content h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 span {
+    color: #4938c7;
+}
+
+.hero-content h2 {
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.hero-content p {
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #4938c7;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #30239a;
+}
+
+/* Common Sections */
+.section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #4938c7;
+    margin-bottom: 30px;
+    font-size: 30px;
+    scroll-margin-top: 85px;
+}
+
+/* About Me */
+.about-card {
+    max-width: 850px;
+    margin: auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+/* Education, Projects and Achievements */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+}
+
+.card {
+    flex: 1 1 250px;
+    max-width: 350px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000012;
+    text-align: left;
+}
+
+.card h3 {
+    color: #4938c7;
+    margin-bottom: 12px;
+}
+
+.card p {
+    margin-bottom: 8px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #315bc5;
+    font-weight: bold;
+}
+
+/* Technical Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background-color: white;
+    color: #4938c7;
+    border: 1px solid #4938c7;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.skill:hover {
+    background-color: #4938c7;
+    color: white;
+}
+
+/* Contact Form */
+.contact-section {
+    background-color: #f5f5ff;
+}
+
+#contactForm {
+    max-width: 750px;
+    margin: auto;
+}
+
+#contactForm input,
+#contactForm textarea {
+    display: block;
+    width: 100%;
+    padding: 17px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    background-color: white;
+    color: #333;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+#contactForm textarea {
+    resize: vertical;
+    min-height: 170px;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    outline: 2px solid #4938c7;
+    border-color: transparent;
+}
+
+.send-btn {
+    width: 100%;
+}
+
+#status {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#status.success {
+    color: #16763b;
+}
+
+#status.error {
+    color: #c62828;
+}
+
+/* Footer */
+footer {
+    background-color: #30239a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        padding-top: 15px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 12px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .section {
+        padding: 45px 6%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 27px;
+    }
+
+    .hero-content h2 {
+        font-size: 19px;
+    }
+
+    .section h2 {
+        font-size: 25px;
+    }
+
+    .card {
+        flex-basis: 100%;
+    }
+
+    #contactForm input,
+    #contactForm textarea {
+        padding: 14px;
+    }
+  }
